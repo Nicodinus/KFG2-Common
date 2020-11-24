@@ -1,0 +1,40 @@
+{
+  "name": "nicodinus/kfg2-common",
+  "homepage": "https://github.com/Nicodinus/KFG2-Common",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nicodinus",
+      "email": "nicodinus@yandex.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nicodinus\\KFG2\\Common\\": "lib"
+    }
+  },
+  "require": {
+    "php": ">=7.4.2",
+    "ext-json": "*",
+    "myclabs/php-enum": "^1.7",
+    "vlucas/phpdotenv": "^5.1",
+    "haydenpierce/class-finder": "^0.4.2",
+    "ramsey/uuid": "^4.0",
+    "amphp/amp": "^2.5",
+    "amphp/parallel": "^1.4",
+    "amphp/log": "^1.1",
+    "amphp/file": "^1.0"
+  },
+  "require-dev": {
+    "larapack/dd": "^1.1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.2"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
