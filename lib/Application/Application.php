@@ -449,7 +449,7 @@ class Application implements ApplicationInterface
     }
 
     /**
-     * @return array
+     * @return string[]
      */
     protected function _getProvidersNamespaces(): array
     {
