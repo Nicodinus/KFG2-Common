@@ -17,9 +17,6 @@ class ClassFinder
     /** @var ApplicationInterface */
     private ApplicationInterface $app;
 
-    /** @var string */
-    private string $scriptPath;
-
     //
 
     /**
@@ -29,14 +26,6 @@ class ClassFinder
     public function __construct(ApplicationInterface $app)
     {
         $this->app = $app;
-
-        $arr = $this->app->getClassloader()->getPrefixesPsr4();
-
-        if (!isset($arr['Nicodinus\\KFG2\\Common\\'])) {
-            throw new \RuntimeException("Invalid package configuration!");
-        }
-
-        $this->scriptPath = realpath($arr['Nicodinus\\KFG2\\Common\\'][0]);
     }
 
     /**
